@@ -1,0 +1,32 @@
+//@import "../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+//@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+.example-tree-invisible {
+    display: none;
+}
+
+.example-tree ul,
+.example-tree li {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+//override the class for reduced the line hight in the tree
+.mat-icon-button {
+    padding: 0;
+    min-width: 0;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    line-height: 35px;
+    border-radius: 50%;
+}
+
+.mat-tree-node {
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    flex: 1;
+    overflow: hidden;
+    word-wrap: break-word;
+}
